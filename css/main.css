@@ -82,10 +82,209 @@ fieldset {
 textarea {
   resize: vertical;
 }
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*-------------------Base Header -Footer Styles---------------------*/
+
+header,
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* Header Styles */
+
+header{
+
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-wrap;
+}
+
+header img{
+
+}
+
+header .header-divider{
+
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav li{
+  
+
+}
+
+/* Footer Styles */
+footer{
+
+}
+
+footer .content-wrapper{
+
+}
+
+footer address .comtact{
+
+}
+
+footer .social{
+  
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+footer .social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p{
+
+}
+
+/*------------------Mobile Styles - Homepage --------------------*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+main .hero-area .content-wrapper{
+
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+aside .content-wrapper{
+
+}
+
+aside .form-description{
+
+}
+
+aside .form{
+
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .content-wrapper{
+
+}
+
+
+.features .fontawesome-icon{
+
+}
+
+.features .features-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews .content-wrapper{
+
+}
+
+.reviews .team-description{
+
+}
+
+/*------------------Mobile Styles - FAQ --------------------*/
+.faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+  
+}
+
+.faq .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+}
+
+.faq-content{}
+
+/*------------------Mobile Styles - About --------------------*/
+.mission{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission .content-wrapper{}
+
+.map{}
+
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section .content-wrapper{}
+
+.general-information{}
+
+.contact{}
+
+.facilitator-chat{}
 
 /* ==========================================================================
    Helper classes
@@ -109,35 +308,44 @@ textarea {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.sr-only {
+
+.visuallyhidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
+  white-space: nowrap;
   /* 1 */
 }
 
 /*
- * Extends the .sr-only class to allow the element
+ * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  white-space: inherit;
   width: auto;
+  white-space: inherit;
 }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+
+
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
