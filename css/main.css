@@ -156,6 +156,11 @@ address {
   margin: 50px 0;
 }
 
+.features i {
+  font-size: 3.75em;
+        margin-bottom: 40px;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -660,6 +665,9 @@ input[type=button] {
   /* ==========================================================================
    About Page
    ========================================================================== */
+.map figure {
+    padding-bottom: 45.5%;
+  }
 
   .mission-content {
     display: flex;
@@ -780,6 +788,9 @@ input[type=button] {
   /* ==========================================================================
   About Page
   ========================================================================== */
+.map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
